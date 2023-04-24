@@ -38,7 +38,7 @@ public class BOT implements NativeKeyListener {
     @Override
     public void nativeKeyPressed(NativeKeyEvent nativeKeyEvent) {
         if (nativeKeyEvent.getKeyCode() == NativeKeyEvent.VC_F8) {
-            robot.mouseMove(614, 443); // Adjust the x and y coordinates to match the location of the words on the screen
+            robot.mouseMove(614, 443);   // Adjust the x and y coordinates to match the location of the words on the screen
             robot.mousePress(InputEvent.BUTTON1_MASK);
             robot.mouseRelease(InputEvent.BUTTON1_MASK);
             robot.delay(100);
@@ -57,7 +57,7 @@ public class BOT implements NativeKeyListener {
                 if (word != null) {
                     setClipboardContents(word);
                     System.out.println("Copied word: " + word);
-                    robot.mouseMove(626, 781); // Adjust the x and y coordinates to match the location of the submission box on the screen
+                    robot.mouseMove(626, 781);   // Adjust the x and y coordinates to match the location of the submission box on the screen
                     robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
                     robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
                     robot.keyPress(KeyEvent.VK_CONTROL);
